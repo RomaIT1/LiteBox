@@ -1,0 +1,30 @@
+//Главный ограничивающий контейнер
+$CONTAINER_WIDTH: '';
+
+//Стили для тега body
+$FONT_FAMILY_DEFAULT: '';
+
+$FONT_SIZE: '';
+
+$FONT_WEIGHT: '';
+
+$COLOR: '';
+
+//Палитра цветов
+$WHITE: #ffffff;
+$BLACK: #000000;
+
+//Чек-поинты устройств
+$DESKTOP_WIDE: 1920px;
+$DESKTOP: 1440px;
+$TABLET_WIDE: 1000px;
+$TABLET: 768px;
+$PHABLET: 560px;
+$MOBILE: 480px;
+
+//Высота header
+$HEIGHT_HEADER: '';
+
+//Значение transition-duration для анимаций
+$DURATION: 230ms;
+

@@ -1,0 +1,64 @@
+.nav {
+   &__items {
+   }
+   &__item {
+
+
+      //!Если есть под-меню, если нет - убрать обязательно!
+      &--sub span {
+         cursor: pointer;
+      }
+   }
+   &__link {
+
+   }
+   //!Нужно, если есть sub item'и, если нет - убрать обязательно!
+   &__sub-items {
+      opacity: 0;
+      position: absolute;
+      visibility: hidden;
+      transform: translate(0, 50px);
+      transition-duration: 300ms;
+      top: 100%;
+      left: 0;
+   }
+   &__sub-item {
+
+   }
+   &__sub-link {
+
+   }
+   //--------------------------------------------------
+}
+
+@media (max-width: $TABLET_WIDE){
+   .nav {
+      margin: 0 0 0 0;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      transition-duration: 300ms;
+      &__items {
+      
+      }
+      &__item{}
+      &__link{}
+   }
+   .nav._active {
+      left: 0;
+   }
+   //Плашка для шапки
+   .nav._active::before {
+      content: '';
+      position: fixed;
+      width: 100%;
+      height: $HEIGHT_HEADER;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background-color: none;
+   }
+}
